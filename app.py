@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from groq import Groq
+import os
 
 app = Flask(__name__)
 client = Groq(api_key="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")
@@ -147,3 +148,4 @@ if __name__ == "__main__":
     import os
     app.run(host='0,0,0,0', port=int(os.environ.get('PORT', 5000)))
     
+
